@@ -29,6 +29,7 @@ CREATE TABLE MenuItems (
     ItemID INT PRIMARY KEY,
     RestaurantID INT FOREIGN KEY REFERENCES Restaurants(RestaurantID),
     CategoryID INT FOREIGN KEY REFERENCES MenuCategories(CategoryID), 
+    CategoryID INT FOREIGN KEY REFERENCES MenuCategories(CategoryID),
     ItemName NVARCHAR(100),
     Price DECIMAL(18, 2)
 );
@@ -42,4 +43,8 @@ CREATE TABLE Transactions (
     TotalAmount DECIMAL(18, 2),
     PaymentMethod NVARCHAR(20)
 );
+<<<<<<< HEAD
 GO
+=======
+GO
+>>>>>>> f895e972b844e0f1681d6ad9420425b2d19624f8
